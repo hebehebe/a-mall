@@ -3,6 +3,7 @@
     <div class="home-recommend-item" v-for="item in filterT4(cproducts)" :key="item.url">
       <a :href="item.url">
         <img :src="item.image" alt="">
+        <div>{{item.title}}</div>
       </a>
     </div>
   </div>
@@ -36,6 +37,7 @@
     text-align: center;
     padding: 5px;
     border-bottom: 10px solid #eee;
+    font-size: 14px;
   }
   .home-recommend-item{
     flex: 1;
